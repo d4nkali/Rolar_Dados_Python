@@ -2,7 +2,6 @@
 
 Programas que faltam serem feitos dos seguintes dados:
 
-* D6
 * 4 D6
 * D8
 * D10
