@@ -1,6 +1,6 @@
 # Rolar_Dados_Python
 
-Programas feitos em pytHon que rola e exibem resultado dos seguintes dados:
+Programas feitos em python que rolam e exibem resultado dos seguintes dados:
 
 * D2
 * D3
