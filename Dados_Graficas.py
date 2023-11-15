@@ -40,7 +40,7 @@ def acao_d2():
 # Função a ser chamada quando o botão do D3 for clicado
 def acao_d3():
     resultado = lancar_d3()
-    label_resultado.config(text=f"Resultado do dado de 6 faces: {resultado}")
+    label_resultado.config(text=f"Resultado do dado de 3 faces: {resultado}")
 
 # Função a ser chamada quando o botão do D4 for clicado
 def acao_d4():
