@@ -10,3 +10,4 @@ Programas feitos em python que rolam e exibem resultado dos seguintes dados:
 - D8
 - D10
 - D12
+- D20

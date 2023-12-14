@@ -3,5 +3,4 @@
 Programas que faltam serem feitos dos seguintes dados:
 
 - D%
-- D20
 - D100

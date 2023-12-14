@@ -36,6 +36,10 @@ def lancar_d10():
 def lancar_d12():
     return random.randint(1, 12)
 
+# Função para lançar um D20
+def lancar_d20():
+    return random.randint(1, 20)
+
 
 ############################################################################################
 
@@ -74,6 +78,11 @@ def acao_d10():
 def acao_d12():
     resultado = lancar_d12()
     label_resultado.config(text=f"Resultado do dado de 12 faces: {resultado}")
+
+# Função a ser chamada quando o botão do D20 for clicado
+def acao_d20():
+    resultado = lancar_d20()
+    label_resultado.config(text=f"Resultado do dado de 20 faces: {resultado}")
 
 
 ############################################################################################
@@ -118,6 +127,10 @@ botao_d10.pack()
 # Botão para lançar o dado de 12 faces
 botao_d12 = tk.Button(janela, text="Lançar D12", command=acao_d12)
 botao_d12.pack()
+
+# Botão para lançar o dado de 20 faces
+botao_d20 = tk.Button(janela, text="Lançar D20", command=acao_d20)
+botao_d20.pack()
 
 
 ############################################################################################
