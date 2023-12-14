@@ -12,3 +12,4 @@ Programas feitos em python que rolam e exibem resultado dos seguintes dados:
 - D12
 - D20
 - D100
+- D%

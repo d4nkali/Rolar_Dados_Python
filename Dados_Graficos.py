@@ -44,6 +44,10 @@ def lancar_d20():
 def lancar_d100():
     return random.randint(1, 100)
 
+# Função para lançar um D%
+def lancar_dporcento():
+    return random.randint(1, 100)
+
 
 ############################################################################################
 
@@ -92,6 +96,11 @@ def acao_d20():
 def acao_d100():
     resultado = lancar_d100()
     label_resultado.config(text=f"Resultado do dado de 100 faces: {resultado}")
+
+# Função a ser chamada quando o botão do D% for clicado
+def acao_dporcento():
+    resultado = lancar_dporcento()
+    label_resultado.config(text=f"Resultado do dado de porcentagem: {resultado}%")
 
 
 ############################################################################################
@@ -144,6 +153,10 @@ botao_d20.pack()
 # Botão para lançar o dado de 100 faces
 botao_d100 = tk.Button(janela, text="Lançar D100", command=acao_d100)
 botao_d100.pack()
+
+# Botão para lançar o dado de porcentagem
+botao_dporcento = tk.Button(janela, text="Lançar D%", command=acao_dporcento)
+botao_dporcento.pack()
 
 
 ############################################################################################
