@@ -4,7 +4,9 @@
 import tkinter as tk
 import random
 
+
 ############################################################################################
+
 
 # Função para lançar um D2 (Moeda)
 def lancar_d2():
@@ -30,7 +32,13 @@ def lancar_d8():
 def lancar_d10():
     return random.randint(0, 9)
 
+# Função para lançar um D12
+def lancar_d12():
+    return random.randint(1, 12)
+
+
 ############################################################################################
+
 
 # Função a ser chamada quando o botão do D2 (Moeda) for clicado
 def acao_d2():
@@ -62,7 +70,14 @@ def acao_d10():
     resultado = lancar_d10()
     label_resultado.config(text=f"Resultado do dado de 10 faces: {resultado}")
 
+# Função a ser chamada quando o botão do D12 for clicado
+def acao_d12():
+    resultado = lancar_d12()
+    label_resultado.config(text=f"Resultado do dado de 12 faces: {resultado}")
+
+
 ############################################################################################
+
 
 # Criar a janela principal
 janela = tk.Tk()
@@ -72,7 +87,9 @@ janela.title("Dados RPG")
 label_resultado = tk.Label(janela, text="")
 label_resultado.pack()
 
+
 ############################################################################################
+
 
 # Botão para lançar o dado de 2 faces/Moeda
 botao_d2 = tk.Button(janela, text="Lançar Moeda", command=acao_d2)
@@ -98,7 +115,13 @@ botao_d8.pack()
 botao_d10 = tk.Button(janela, text="Lançar D10", command=acao_d10)
 botao_d10.pack()
 
+# Botão para lançar o dado de 12 faces
+botao_d12 = tk.Button(janela, text="Lançar D12", command=acao_d12)
+botao_d12.pack()
+
+
 ############################################################################################
+
 
 # Iniciar a interface gráfica
 janela.mainloop()
