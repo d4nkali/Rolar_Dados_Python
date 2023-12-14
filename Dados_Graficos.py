@@ -1,4 +1,4 @@
-# Rolar dados RPG por d4nkali 
+# Rolar dados RPG com GUI por d4nkali 
 
 # Importa as bibliotecas
 import tkinter as tk
@@ -39,6 +39,10 @@ def lancar_d12():
 # Função para lançar um D20
 def lancar_d20():
     return random.randint(1, 20)
+
+# Função para lançar um D100
+def lancar_d100():
+    return random.randint(1, 100)
 
 
 ############################################################################################
@@ -83,6 +87,11 @@ def acao_d12():
 def acao_d20():
     resultado = lancar_d20()
     label_resultado.config(text=f"Resultado do dado de 20 faces: {resultado}")
+
+# Função a ser chamada quando o botão do D100 for clicado
+def acao_d100():
+    resultado = lancar_d100()
+    label_resultado.config(text=f"Resultado do dado de 100 faces: {resultado}")
 
 
 ############################################################################################
@@ -131,6 +140,10 @@ botao_d12.pack()
 # Botão para lançar o dado de 20 faces
 botao_d20 = tk.Button(janela, text="Lançar D20", command=acao_d20)
 botao_d20.pack()
+
+# Botão para lançar o dado de 100 faces
+botao_d100 = tk.Button(janela, text="Lançar D100", command=acao_d100)
+botao_d100.pack()
 
 
 ############################################################################################
