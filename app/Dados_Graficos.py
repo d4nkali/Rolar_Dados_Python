@@ -171,8 +171,8 @@ botao_dporcento.pack()
 ############################################################################################
 
 
-# Iniciar a interface gráfica
+# Inicia a interface gráfica
 
 janela.geometry('400x400')
-
+janela.iconbitmap('app/img/d8.ico')
 janela.mainloop()
