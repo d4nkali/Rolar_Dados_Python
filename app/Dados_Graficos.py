@@ -3,6 +3,7 @@
 # Importa as bibliotecas
 import tkinter as tk
 import random
+from PIL import Image, ImageTk
 
 
 ############################################################################################
@@ -120,6 +121,10 @@ janela = tk.Tk()
 janela.title("Dados RPG")
 
 # Rótulo para exibir o resultado
+wallpaper = Image.open('app/img/dados.jpeg')
+wallpaper = ImageTk.PhotoImage(wallpaper)
+label_wallpaper = tk.Label(janela, image=wallpaper)
+label_wallpaper.place(x=0, y=0, relwidth=1, relheight=1) 
 label_resultado = tk.Label(janela, text="", font=(fonte_texto, tamanho_fonte))
 label_resultado.pack()
 
