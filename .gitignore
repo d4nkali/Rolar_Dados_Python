@@ -7,6 +7,8 @@
 .venv/*
 venv/*
 
-# Pasta dist
+# Pasta do pyinstaller
 
-dist/
+dist/*
+build/*
+Dados_Graficos.spec
