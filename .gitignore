@@ -12,3 +12,6 @@ venv/*
 dist/*
 build/*
 Dados_Graficos.spec
+app/dist/*
+app/build/*
+app/Dados_Graficos.spec
