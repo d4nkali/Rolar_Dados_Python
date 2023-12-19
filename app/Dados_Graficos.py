@@ -8,6 +8,15 @@ import random
 ############################################################################################
 
 
+# Variaveis de customização do aplicativo
+
+fonte_texto = 'Arial'
+tamanho_fonte = '12'
+
+
+############################################################################################
+
+
 # Função para lançar um D2 (Moeda)
 def lancar_d2():
     return random.randint(1, 2)
@@ -111,7 +120,7 @@ janela = tk.Tk()
 janela.title("Dados RPG")
 
 # Rótulo para exibir o resultado
-label_resultado = tk.Label(janela, text="")
+label_resultado = tk.Label(janela, text="", font=(fonte_texto, tamanho_fonte))
 label_resultado.pack()
 
 
@@ -119,43 +128,43 @@ label_resultado.pack()
 
 
 # Botão para lançar o dado de 2 faces/Moeda
-botao_d2 = tk.Button(janela, text="Lançar Moeda", command=acao_d2)
+botao_d2 = tk.Button(janela, text="Lançar Moeda", font=(fonte_texto, tamanho_fonte), command=acao_d2)
 botao_d2.pack()
 
 # Botão para lançar o dado de 3 faces
-botao_d3 = tk.Button(janela, text="Lançar D3", command=acao_d3)
+botao_d3 = tk.Button(janela, text="Lançar D3", font=(fonte_texto, tamanho_fonte), command=acao_d3)
 botao_d3.pack()
 
 # Botão para lançar o dado de 4 faces
-botao_d4 = tk.Button(janela, text="Lançar D4", command=acao_d4)
+botao_d4 = tk.Button(janela, text="Lançar D4", font=(fonte_texto, tamanho_fonte), command=acao_d4)
 botao_d4.pack()
 
 # Botão para lançar o dado de 6 faces
-botao_d6 = tk.Button(janela, text="Lançar D6", command=acao_d6)
+botao_d6 = tk.Button(janela, text="Lançar D6", font=(fonte_texto, tamanho_fonte), command=acao_d6)
 botao_d6.pack()
 
 # Botão para lançar o dado de 8 faces
-botao_d8 = tk.Button(janela, text="Lançar D8", command=acao_d8)
+botao_d8 = tk.Button(janela, text="Lançar D8", font=(fonte_texto, tamanho_fonte), command=acao_d8)
 botao_d8.pack()
 
 # Botão para lançar o dado de 10 faces
-botao_d10 = tk.Button(janela, text="Lançar D10", command=acao_d10)
+botao_d10 = tk.Button(janela, text="Lançar D10", font=(fonte_texto, tamanho_fonte), command=acao_d10)
 botao_d10.pack()
 
 # Botão para lançar o dado de 12 faces
-botao_d12 = tk.Button(janela, text="Lançar D12", command=acao_d12)
+botao_d12 = tk.Button(janela, text="Lançar D12", font=(fonte_texto, tamanho_fonte), command=acao_d12)
 botao_d12.pack()
 
 # Botão para lançar o dado de 20 faces
-botao_d20 = tk.Button(janela, text="Lançar D20", command=acao_d20)
+botao_d20 = tk.Button(janela, text="Lançar D20", font=(fonte_texto, tamanho_fonte), command=acao_d20)
 botao_d20.pack()
 
 # Botão para lançar o dado de 100 faces
-botao_d100 = tk.Button(janela, text="Lançar D100", command=acao_d100)
+botao_d100 = tk.Button(janela, text="Lançar D100", font=(fonte_texto, tamanho_fonte), command=acao_d100)
 botao_d100.pack()
 
 # Botão para lançar o dado de porcentagem
-botao_dporcento = tk.Button(janela, text="Lançar D%", command=acao_dporcento)
+botao_dporcento = tk.Button(janela, text="Lançar D%", font=(fonte_texto, tamanho_fonte), command=acao_dporcento)
 botao_dporcento.pack()
 
 
