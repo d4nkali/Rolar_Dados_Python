@@ -1,0 +1,12 @@
+# Pasta do vscode
+
+.vscode/*
+
+# Pasta venv
+
+.venv/*
+venv/*
+
+# Pasta dist
+
+dist/
