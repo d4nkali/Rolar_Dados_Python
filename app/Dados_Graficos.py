@@ -172,4 +172,7 @@ botao_dporcento.pack()
 
 
 # Iniciar a interface gráfica
+
+janela.geometry('400x400')
+
 janela.mainloop()
