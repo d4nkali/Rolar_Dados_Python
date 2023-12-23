@@ -121,7 +121,7 @@ janela = tk.Tk()
 janela.title("Dados RPG")
 
 # Exibindo a janela
-wallpaper = Image.open('img\dados.png')
+wallpaper = Image.open('app\img\dados.png')
 wallpaper = ImageTk.PhotoImage(wallpaper)
 label_wallpaper = tk.Label(janela, image=wallpaper)
 label_wallpaper.place(x=0, y=0, relwidth=1, relheight=1) 
@@ -179,5 +179,5 @@ botao_dporcento.pack()
 # Inicia a interface gráfica
 
 janela.geometry('400x400')
-janela.iconbitmap('img\d8.ico')
+janela.iconbitmap('app\img\d8.ico')
 janela.mainloop()
